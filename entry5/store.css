@@ -1,0 +1,41 @@
+.storefront {
+    column-count: 4;
+    column-gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item {
+    display: inline-block;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    break-inside: avoid;
+}
+
+.item a {
+    text-decoration: none;
+    color: #151515;
+}
+
+.item-image {
+    width: 100%;
+    height: auto;
+}
+
+ .wa img{
+    margin:auto;
+    display:block;
+    width: 40%;
+
+}
+
+.item-text {
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+
+}
