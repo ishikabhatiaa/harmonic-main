@@ -1,0 +1,114 @@
+.wine-tasting-guide {
+    padding: 20px;
+    margin: 70px 100px 50px 100px;
+    text-align: center;
+}
+
+.wine-tasting-guide h2 {
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.wine-tasting-guide p {
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.hoverimg {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hvrimg {
+    width: auto;
+    height: 75vh;
+    object-fit: cover;
+}
+
+.wineholder {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    height: 75vh;
+    width: 75vw;
+}
+
+
+.step {
+    position: absolute;
+    width: 50%;
+    /* Half the width of the container */
+    height: 50%;
+    /* Half the height of the container */
+    z-index: 2;
+    /* Ensure the text is above the image */
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    margin: auto;
+    transition: opacity 0.75s ease;
+}
+
+#step1 {
+    top: 0;
+    left: 0;
+    background-color: rgba(21,
+            21,
+            21, 0.8);
+
+}
+
+#step2 {
+    top: 0;
+    right: 0;
+    background-color: rgba(21,
+            21,
+            21, 0.8);
+}
+
+#step3 {
+    bottom: 0;
+    left: 0;
+    background-color: rgba(21,
+            21,
+            21, 0.8);
+}
+
+#step4 {
+    bottom: 0;
+    right: 0;
+    background-color: rgba(21,
+            21,
+            21, 0.8);
+}
+
+#step1:hover {
+    opacity: 1;
+    color: #F3F1EE;
+
+}
+
+#step2:hover {
+    opacity: 1;
+    color: #F3F1EE;
+
+}
+
+#step3:hover {
+    opacity: 1;
+    color: #F3F1EE;
+}
+
+#step4:hover {
+    opacity: 1;
+    color: #F3F1EE;
+}

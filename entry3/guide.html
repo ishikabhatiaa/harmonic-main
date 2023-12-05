@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Types of Wine</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="guide.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="Wine">Wine</a>
+        <nav class="navbar">
+            <a href="../entry2/how.html"><span>how is wine made</span></a>
+            <a href="../entry1/varietals.html"><span>know your wine better</span></a>
+            <a href="../entry3/guide.html"><span>tasting guide</span></a>
+            <a href="../entry5/history.html"><span>wine storefront</span></a>
+            <a href="../entry4/pairing.html"><span>pairings</span></a>
+            <a href="../entry6/sangria.html"><span>sangria</span></a>
+            <a href="../entry7/diary.html"><span>my wine diary</span></a>
+            <a href="../entry8/discover.html"><span>discover</span></a>
+            <a href="../entry9/health.html"><span>health</span></a>
+            <a href="../entry10/glossary.html"><span>gloassary</span></a>
+        </nav>
+    </header>
+
+
+    <div class="wine-tasting-guide">
+        <h1>The Art of Wine Tasting: A Simple Guide</h1>
+        <p>Anyone can appreciate the subtleties of wine tasting. With just a glass of wine and a bit of focus, you can
+            explore a world of flavors and aromas. Follow these four steps to unlock the secrets in every sip:
+        </p>
+    </div>
+
+
+    <div class="wineholder">
+
+        <div class="hoverimg">
+            <img src="how.jpg" alt="how to taste wine" class="hvrimg">
+        </div>
+
+
+        <div class="step" id="step1">
+            <h2>1. Look</h2>
+            <p>First, observe the wine's color, opacity, and viscosity, often called "legs". This quick glance can
+                reveal
+                much about the wine, like age and alcohol content, which are often also listed on the bottle.</p>
+        </div>
+
+        <div class="step" id="step2">
+            <h2>2. Smell</h2>
+            <p>Begin with broad categories when identifying aromas. For white wines, think citrus or tropical
+                fruits.
+                For
+                reds, consider red or black fruits. Primary aromas are fruit and flower-driven, secondary come from
+                winemaking (like yeast influences), and tertiary aromas evolve from aging, offering savory notes
+                like
+                cedar
+                or leather.</p>
+        </div>
+
+        <div class="step" id="step3">
+            <h2>3. Taste</h2>
+            <p>Tasting involves more than just your taste buds. Detect sour, sweet, bitter, and even salty notes.
+                Remember,
+                you can’t smell sweetness, but your tongue can discern it. Feel the texture, from the rich,
+                alcohol-induced
+                body to the tannin's dryness. Observe the wine's journey from the initial taste to the lingering
+                finish.
+            </p>
+        </div>
+
+        <div class="step" id="step4">
+            <h2>4. Think</h2>
+            <p>Reflect on the wine's balance. Was it harmonious or skewed towards an element (acidic, alcoholic,
+                tannic)?
+                Did it leave an impression? Identify standout qualities that made the wine memorable or unique.</p>
+        </div>
+
+    </div>
+    <script>
+        window.onscroll = function () {
+            var myDiv = document.querySelector('.header');
+            var navbar = document.querySelectorAll('.navbar a span');
+            var rootStyle = document.documentElement.style;
+            if (window.pageYOffset > 90) {
+                myDiv.style.background = '#151515';
+                navbar.forEach(item => {
+                    item.style.setProperty('color', '#F3F1EE', 'important');
+                });
+                rootStyle.setProperty('--navbar-before-bg', '#F3F1EE');
+            } else {
+                myDiv.style.background = '';
+                navbar.forEach(item => {
+                    item.style.setProperty('color', '#151515', 'important');
+                });
+                rootStyle.setProperty('--navbar-before-bg', '#151515');
+            }
+        };
+        window.addEventListener('load', function () {
+            var image = document.querySelector('.hvrimg');
+            var wineholder = document.querySelector('.wineholder');
+
+            // Set the container dimensions to match the image
+            wineholder.style.width = image.offsetWidth + 'px';
+            wineholder.style.height = image.offsetHeight + 'px';
+        });
+    </script>
+
+
+</body>
+
+</html>
