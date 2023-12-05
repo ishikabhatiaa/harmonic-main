@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="Wine">Wine</a>
+        <nav class="navbar">
+            <a href="entry2/how.html"><span>how is wine made</span></a>
+            <a href="entry1/varietals.html"><span>know your wine better</span></a>
+            <a href="entry3/guide.html"><span>Tasting Guide</span></a>
+            <a href="entry5/history.html"><span>wine storefront</span></a>
+            <a href="entry4/pairing.html"><span>Pairings</span></a>
+            <a href="entry6/sangria.html"><span>sangria</span></a>
+            <a href="entry7/diary.html"><span>my wine diary</span></a>
+            <a href="entry8/discover.html"><span>discover</span></a>
+            <a href="entry9/music.html"><span>music</span></a>
+            <a href="entry10/glossary.html"><span>gloassary</span></a>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <img src="background.jpeg" alt="a nice soothing medow">
+
+    </div>
+    <div class="centered">
+        <h1>Welcome to Wine</h1>
+    </div>
+
+    <div class="pt2">
+        <div class="content-container">
+            <div class="content">
+                <h2>What is Wine?</h2>
+                <p>Wine is an alcoholic drink typically made from fermented grape juice. Yeast consumes the sugar in the
+                    grapes
+                    and converts it to ethanol, carbon dioxide, and heat. Different varieties of grapes and strains of
+                    yeasts
+                    produce different styles of wine. These variations result from the complex interactions between the
+                    biochemical development of the grape, the reactions involved in fermentation, the grape's growing
+                    environment (terroir), and the production process. Many countries enact legal appellations intended
+                    to
+                    define styles and qualities of wine. These typically restrict the geographical origin and permitted
+                    varieties of grapes, as well as other aspects of wine production. Wines not made from grapes involve
+                    fermentation of additional crops including, rice wine and other fruit wines such as plum, cherry,
+                    pomegranate, currant and elderberry.
+
+                    Wine is an alcoholic drink typically made from fermented grape juice. Yeast consumes the sugar in
+                    the
+                    grapes
+                    and converts it to ethanol, carbon dioxide, and heat. Different varieties of grapes and strains of
+                    yeasts
+                    produce different styles of wine. These variations result from the complex interactions between the
+                    biochemical development of the grape, the reactions involved in fermentation, the grape's growing
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="wine.jpg" alt="a nice soothing meadow">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.pageYOffset;
+            var textElement = document.querySelector('.centered');
+
+            // Example condition: Change color after scrolling 100px
+            if (scrollPosition > 350) {
+                textElement.style.color = "#111"; // Change to the new color
+            } else {
+                textElement.style.color = '#F3F1EE'; // Revert to initial color
+            }
+        });
+
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.pageYOffset;
+            var textElement = document.querySelector('.centered');
+
+            // Define the scroll threshold
+            var scrollThreshold = 570; // Adjust this value as needed
+
+            if (scrollPosition >= scrollThreshold) {
+                textElement.style.position = 'absolute'; // Or 'relative'
+                textElement.style.top = (scrollThreshold * 1.7) + 'px'; // Set the new top position
+                textElement.style.transform = 'translateX(-50%)'; // Adjust transform for horizontal centering
+            }
+
+            else {
+                textElement.style.position = 'fixed';
+                textElement.style.top = '50%';
+                textElement.style.transform = 'translate(-50%, -50%)';
+            }
+        });
+
+
+        window.onscroll = function () {
+            var myDiv = document.querySelector('.header');
+            var navbar = document.querySelectorAll('.navbar a span');
+            var rootStyle = document.documentElement.style;
+            if (window.pageYOffset > 860) {
+                myDiv.style.background = '#151515';
+                navbar.forEach(item => {
+                    item.style.setProperty('color', '#F3F1EE', 'important');
+                });
+                rootStyle.setProperty('--navbar-before-bg', '#F3F1EE');
+            } else {
+                myDiv.style.background = '';
+                navbar.forEach(item => {
+                    item.style.setProperty('color', '#151515', 'important');
+                });
+                rootStyle.setProperty('--navbar-before-bg', '#151515');
+            }
+        };
+
+
+    </script>
+</body>
+
+</html>
