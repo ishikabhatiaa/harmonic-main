@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F3F1EE;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lora', serif;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    transition: color 0.95s ease;
+}
+
+
+.Wine {
+    font-size: 42px;
+    color: #a52a2a;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: auto;
+    z-index: 1;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: auto;
+}
+
+.navbar a span {
+    color: #151515;
+    padding: 0px 20px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.9s ease;
+}
+
+.navbar a span::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--navbar-before-bg);
+    transition: .35s;
+}
+
+:root {
+    --navbar-before-bg: black;
+    /* default color */
+}
+
+.navbar a:hover span::before {
+    width: 85%;
+}
+
+
+.container {
+    background-color: #F3F1EE;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.container img {
+    top: 0;
+    left: 0;
+    opacity: 0.65;
+    margin: auto;
+    padding: 0 60px;
+    position: absolute;
+    width: 100%;
+    /* Adjust as needed */
+    height: 90%;
+    border-radius: 0 0 150px 150px;
+}
+
+
+
+
+.centered {
+    position: fixed;
+    font-size: 35px;
+    font-weight: 70;
+    text-align: center;
+    margin: auto;
+    transition: color 0.85s;
+    padding: 20px;
+    z-index: 1;
+    top: 60%;
+    /* Adjust as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F3F1EE;
+}
+
+.pt2 {
+
+    z-index: 4;
+    font-size: 20px;
+    padding: 30px 20px 30px 10px;
+    margin: 1000px 40px 10px 40px;
+
+}
+
+.pt2 .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.pt2 .content {
+    flex: 1;
+    /* Adjust as needed */
+    padding: 20px;
+    /* Spacing between content and image */
+}
+
+.pt2 .image-container {
+    flex: 1;
+    padding: 20px;
+    width: 200px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.pt2 .image-container img {
+    width: 100%;
+    padding: 15px;
+    height: 100%;
+    object-fit: cover;
+    /* Keeps aspect ratio, but crops the image */
+    object-position: center;
+    /* Adjust the position as needed */
+
+}
