@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>How is wine made?</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="how.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="Wine">Wine</a>
+        <nav class="navbar">
+            <a href="../entry2/how.html"><span>how is wine made</span></a>
+            <a href="../entry1/varietals.html"><span>know your wine better</span></a>
+            <a href="../entry3/guide.html"><span>tasting guide</span></a>
+            <a href="../entry5/history.html"><span>wine storefront</span></a>
+            <a href="../entry4/pairing.html"><span>pairings</span></a>
+            <a href="../entry6/sangria.html"><span>sangria</span></a>
+            <a href="../entry7/diary.html"><span>my wine diary</span></a>
+            <a href="../entry8/discover.html"><span>discover</span></a>
+            <a href="../entry9/health.html"><span>health</span></a>
+            <a href="../entry10/glossary.html"><span>gloassary</span></a>
+        </nav>
+    </header>
+
+
+    <div class="tiled-background">
+        <div class="containment">
+            <section id="showcase">
+                <h2>Explore the Art of Winemaking</h1>
+                    <p>Each bottle tells a story of tradition, dedication, and craftsmanship. Our expertise in selecting
+                        and reviewing the world's finest wines is unparalleled. We invite you to
+                        explore
+                        this journey with us.</p>
+            </section>
+
+            <section id="main">
+                <h1>Understanding Winemaking</h2>
+                    <p>Understand the intricate process that transforms a humble grape into a masterpiece of flavor and
+                        aroma.
+                        From
+                        the sun-drenched vineyards to the careful aging process, every step in winemaking is a blend of
+                        science
+                        and
+                        art, passion and precision.</p>
+            </section>
+
+            <section id="flavor-exploration">
+                <h2>Explore Your Taste</h2>
+                <p>Whether you're a connoisseur of the robust and complex flavors of reds or prefer the light and
+                    refreshing
+                    notes of whites, our curated insights will guide you through the fascinating world of winemaking.
+                    Choose
+                    your path and discover the secrets behind your favorite wines.</p>
+            </section>
+        </div>
+
+
+
+        <div class="wine-selection">
+            <div class="option" id="redWine">
+                <div class="wine-fill" id="redWineFill"></div>
+                <h2>Red Wine</h2>
+                <p>Discover the rich flavors and intricate process behind making red wine.</p>
+            </div>
+            <div class="option" id="whiteWine">
+                <div class="wine-fill" id="whiteWineFill"></div>
+                <h2>White Wine</h2>
+                <p>Explore the delicate and refined techniques used in white wine production.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('redWine').addEventListener('click', function () {
+            window.location.href = 'red-wine.html'; // URL to the red wine page
+        });
+
+        document.getElementById('whiteWine').addEventListener('click', function () {
+            window.location.href = 'white-wine.html'; // URL to the white wine page
+        });
+
+        //mouse events for the button
+        document.getElementById('redWine').addEventListener('mouseenter', function () {
+            var fill = document.getElementById('redWineFill');
+            fill.style.height = "100%";
+            fill.style.animationPlayState = 'running';
+        });
+
+        document.getElementById('redWine').addEventListener('mouseleave', function () {
+            var fill = document.getElementById('redWineFill');
+            fill.style.height = "0%";
+            fill.style.animationPlayState = 'paused';
+        });
+
+        document.getElementById('whiteWine').addEventListener('mouseenter', function () {
+            var fill = document.getElementById('whiteWineFill');
+            fill.style.height = "100%";
+            fill.style.animationPlayState = 'running';
+        });
+
+        document.getElementById('whiteWine').addEventListener('mouseleave', function () {
+            var fill = document.getElementById('whiteWineFill');
+            fill.style.height = "0%";
+            fill.style.animationPlayState = 'paused';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Guide to wine.</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="variety.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="Wine">Wine</a>
+        <nav class="navbar">
+            <a href="../entry2/how.html"><span>how is wine made</span></a>
+            <a href="../entry1/varietals.html"><span>know your wine better</span></a>
+            <a href="../entry3/guide.html"><span>tasting guide</span></a>
+            <a href="../entry5/history.html"><span>wine storefront</span></a>
+            <a href="../entry4/pairing.html"><span>pairings</span></a>
+            <a href="../entry6/sangria.html"><span>sangria</span></a>
+            <a href="../entry7/diary.html"><span>my wine diary</span></a>
+            <a href="../entry8/discover.html"><span>discover</span></a>
+            <a href="../entry9/health.html"><span>health</span></a>
+            <a href="../entry10/glossary.html"><span>gloassary</span></a>
+        </nav>
+    </header>
+
+    <div class="main">
+
+
+        <div class="guide">
+            <h1>Your Basic Wine Guide is Here!</h1>
+            <p>
+                Wine is more than just a drink; it's a lifestyle, a study in farming, and a way to explore different
+                cultures.
+
+                However, with so many different angles to approach wine, how do you get started?
+
+                Fortunately, there are only a few basic techniques to learn, as well as some common wine knowledge.
+                Learn the different wine styles, wine glasses, and tips on tasting like a wine connoisseur.
+            </p>
+
+        </div>
+
+        <div class="options">
+
+            <h1>Do you have a type?</h1>
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+
+            <div id="wineTypeQuestion" class="hidden">
+                <h1>Red or White wine?</h1>
+                <button id="redButton">Red</button>
+                <button id="whiteButton">White</button>
+            </div>
+
+            <div id="redWines" class="hidden">
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Cabernet Sauvignon</h2>
+                        <p>Cabernet Sauvignon is one of the most widely planted and beloved grape varieties in the
+                            world, providing the backbone
+                            for wines from Bordeaux, Napa Valley, and beyond.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/nKvKUbva8tFeSLu-ywPMRQ4AQGA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sonoma-wines-benziger-cabernet-sauvignon-ft-blog1019-19a30b60ba204b4e8593afe1710d0b66.jpg"
+                            alt="Cabernet Sauvignon">
+                    </div>
+                </div>
+
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Merlot</h2>
+                        <p>Merlot is a red wine that is produced from the grape variety of the same name. Stylistically,
+                            it runs the gamut from
+                            fruit-forward and sweet with oak to more structured and nuanced, capable of aging for
+                            decades. Merlot is one of the key
+                            components in the classic blends of Bordeaux. On the Right Bank, in Pomerol in particular,
+                            it is often crafted into
+                            wines (or incorporated into blends, typically with Cabernet Franc) that rank among the most
+                            profound in the world.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/IvK-JAozAeSd__vvpy6KIfnpGPc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/israeli-wines-2016-Tura-Estate-Winery-Mountain-Heights-Merlot-Judean-Hills-FT-BLOG0220-07519700f87d4cef82333d1651b1fdd0.jpg"
+                            alt="Merlot">
+                    </div>
+                </div>
+
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Pinot Noir</h2>
+                        <p>Pinot Noir is a wine made from the grape variety of the same name. The majority of Pinot Noir
+                            wines are red, but can
+                            also be leveraged to produce fantastic rosé (look for the Inman Family "Endless Crush" OGV
+                            Estate Rosé for a joyous and
+                            complex example). Pinot Noir is also one of the three main grape varieties in Champagne,
+                            alongside Pinot Meunier and
+                            Chardonnay.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/oPE0TGd5FdHuUA28Y2vrIQe2OcU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sonoma-coast-pinot-noir-2018-Pfendler-Estate-Grown-Pinot-Noir-Petaluma-Gap-FT-BLOG0320-45f97908b298409e87d940cdaed82b5d.jpg"
+                            alt="Cabernet Sauvignon">
+                    </div>
+                </div>
+
+
+
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Syrah</h2>
+                        <p>Syrah is a wine that's produced from the grape of the same name. It's most frequently
+                            crafted as a red wine, which makes
+                            sense given the thicker skins, tannins, and phenolic compounds that can be extracted
+                            from them during maceration and
+                            fermentation. But Syrah is also an important player in the world of rosé. Examples from
+                            the Rhône Valley, Provence,
+                            Languedoc, and beyond are wildly popular with consumers around the world.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/Eewac-B2cpWBBDbRBERIm9dNvl8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/best-syrah-wines-cuvaison-FT-BLOG0621-4b021843729542ccbeebb52c90bf848f.jpg"
+                            alt="Cabernet Sauvignon">
+                    </div>
+                </div>
+
+
+
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Zinfandel</h2>
+                        <p>Zinfandel is a red wine produced from the grape variety of the same name. Because it reaches
+                            its peak of quality and
+                            expressiveness in the United States, it is almost always labeled with the name of that grape
+                            on the bottle. The
+                            overwhelming majority of Zinfandel wines are red, dry, and still, though rosé and sweet
+                            late-harvest examples can
+                            certainly be found, along with the occasional sparkling.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/wGXIJ5YDJfwZ3R0XpT-KKpn_DcA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-red-meat-pairing-seghesio-zinfandel-FT-BLOG0920-728f4a6b14314378818c4b5a26b2fb4a.jpg"
+                            alt="Cabernet Sauvignon">
+                    </div>
+                </div>
+
+
+
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Grenache</h2>
+                        <p>Grenache wine is produced in many countries and in a range of styles. Its most well-known
+                            versions are red, but Grenache
+                            also plays an important role in rosés. In most of the world it is referred to as Grenache
+                            (or, less frequently, Grenache
+                            Noir) but in Spain and other Spanish-speaking wine-producing countries, it's known as
+                            Garnacha.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/qpfpfxhAYBPpjhDOFUnRSalxh5w=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/best-grenache-wines-yangarra-FT-BLOG0421-22216e00f7d247f38b8fb14e2b7df4db.jpg"
+                            alt="Cabernet Sauvignon">
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Malbec</h2>
+                        <p>Malbec is a wine produced from the grape of the same name. It is most often a red wine, but
+                            like all
+                            other red varieties, it can be made into white and rosé. Historically, white Malbec was a
+                            rarity,
+                            and while it still is, there are a handful of examples notably being produced in Argentina.
+                            Malbec
+                            rosé is far more commonly seen, but the grape really shines most brightly as a red wine,
+                            whether
+                            bottled on its own or as a component of a blend.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/Gl56NC97sVjw2TLQgICHdBKZlqg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/bodega-septima-malbec-2016-mendoza-argentina-malbecs-FT-BLOG0418-0630551850c046bdbb4cba7146aa336e.jpg"
+                            alt="Cabernet Sauvignon">
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Sangiovese</h2>
+                        <p>Sangiovese is the most widely planted grape variety in Italy, though given the naming
+                            conventions of
+                            Italian wines, it's unlikely that you'll find a bottle labeled as such. Rather, you'll have
+                            to know
+                            beforehand that Sangiovese is the dominant grape variety in Chianti blends and the only one
+                            permitted in Brunello di Montalcino and Vino Nobile di Montepulciano. Outside of Italy,
+                            Sangiovese
+                            has some success in parts of Australia, particularly McLaren Vale, and in Oregon, Arizona,
+                            and
+                            pockets of California. Sangiovese is, however, primarily grown throughout Italy.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/Qt2OuPyYcwFkrwfwAPbOiF7273Y=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/tuscan-wines-201620Rocca20di20Montemassi20Le20Focaie20Sangiovese20Maremma20Toscana20-FT-BLOG1219-a3270d47d63940a6a2b909741f59e116.jpg"
+                            alt="Cabernet Sauvignon">
+                    </div>
+                </div>
+
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Cabernet Franc</h2>
+                        <p>From France’s Loire Valley to Napa Valley, Canada, Argentina, and beyond, Cabernet Franc
+                            shines on
+                            its own and in blends. A cooler glass of Cabernet Franc will place the focus more squarely
+                            on the
+                            herbal and bell pepper notes, whereas a less-cool glass will allow the brambly berries, wild
+                            strawberries, and plums to emerge more assertively. In either case, the best examples will
+                            showcase
+                            bell peppers, spice, and herbal flavors and aromas, along with hints of minerality and
+                            tobacco. If
+                            the wine has been aged in new oak, sweet spices and suggestions of chocolate may arise.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/qIGw7qzIpgCzq2srN-FqFF5Oxis=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/cabernet-franc-2018_halcyon_wines_cabernet_franc_alder_springs_vineyard-ft-blog1219-9242910ef35442f0adc518da71f4f8f6.jpg"
+                            alt="Cabernet Sauvignon">
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Nebbiolo</h2>
+                        <p>Nebbiolo is most famously grown in the Piedmont (or, in Italian, Piemonte) region of Italy,
+                            which is
+                            located in the northwest of the country. The two most famous wines from Piedmont are both
+                            crafted
+                            entirely from Nebbiolo: Barolo and Barbaresco.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/kflLa5VvmtDADDw7wscptwMHAIo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Wine-Guide-Nebbiolo-FT-BLOG1022-2000-887691ad5efa4472bfc3339f1f6b0cc4.jpg"
+                            alt="Cabernet Sauvignon">
+                    </div>
+                </div>
+
+
+
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Tempranillo</h2>
+                        <p>Tempranillo is a red wine produced from the grape of the same name. In the so-called New
+                            World, it’s
+                            likely to be labeled as such, while on labels from its classic growing regions of Spain, the
+                            name of
+                            the region is more likely to appear. Just know that the vast majority of red wines from
+                            Rioja are
+                            blends that are based on Tempranillo, and most of the great reds of Ribera del Duero are
+                            entirely
+                            Tempranillo.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/tn2RAh0NmB66o5gALCaOz--JAxY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/14996633834_abb6b9e1df_o-56a41be63df78cf77280eb6d.jpg"
+                            alt="Cabernet Sauvignon">
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-description">
+                        <h2>Montepulciano</h2>
+                        <p>Montepulciano wine is a typically red wine crafted from the grape variety of the same name,
+                            though it
+                            also makes excellent rosé. It is most frequently associated with Montepulciano d’Abruzzo,
+                            which is
+                            grown in Abruzzo, in east-central Italy.</p>
+                    </div>
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/DQ8bwL70Z1ig-9NSzFczbk_VDIA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Wine-Guide-Montepulciano-FT-BLOG1122-71e9497d2ac54191a35defdf44c9030d.jpg"
+                            alt="Cabernet Sauvignon">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <div id="whiteWines" class="hidden">
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/TwqC9aLRN-vkP2QRPN4ZYhgk_N0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Wine-Guide-Gewurztraminer-FT-BLOG0722-2000-15a0235f2d35493eb09bc4696cc6c082.jpg"
+                            alt="White Wine 1">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Gewürztraminer</h2>
+                        <p>Gewürztraminer wine is produced from the grape of the same name. Historically, the most
+                            famous
+                            sources of Gewürztraminer have been Germany and the Alsace region of France, but it also
+                            does very
+                            well in the Alto-Adige region of Italy. Where and how it's grown can have a significant
+                            impact on
+                            the character of the wine that's produced from Gewürztraminer grapes, but in general, the
+                            wine will
+                            showcase some combination of lychee and stone fruit, spice, and floral notes.</p>
+                    </div>
+                </div>
+
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/X_H9MjZK4HzRheSICExQaFjZjJ8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Wine-Guide-Malvasia-XL-BLOG0722-2000-500e038febf54f028cededc57cbb6292.jpg"
+                            alt="White Wine 2">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Malvasia</h2>
+                        <p>Malvasia is a wine — and often an aromatic wine — made from the grape variety of the same
+                            name. The
+                            most well-known are white wines produced from or blended with the Malvasia Bianca grape.</p>
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/hvxMDvlpxwYIq6b3UpKweORcsLg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Wine-Guide-Chenin-Blanc-FT-BLOG1022-9266047f4c3043adbc8747ea00ab331d.jpg"
+                            alt="White Wine 2">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Chenin Blanc</h2>
+                        <p>Chenin Blanc is a white or sparkling, dry or sweet wine produced from the grape variety of
+                            the same
+                            name. It’s typically redolent of fruit, vivid with mouthwatering acidity, or — in the best
+                            cases —
+                            both.</p>
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/6dV7QOKAk8WBGs2P1U0F0f6yubs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Wine-Guide-Semillon-FT-BLOG1022-1-2000-c43a6f4353b04be880ad208cb4b732b9.jpg"
+                            alt="White Wine 2">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Semillon</h2>
+                        <p>Semillon is a white wine produced from the grape variety of the same name. It's most
+                            frequently
+                            associated with the whites wines of Bordeaux, where it is generally blended with Sauvignon
+                            Blanc and
+                            Muscadelle. Many of the great sweet wines of Sauternes also rely on Semillon as part of
+                            their blend.
+                            Semillon shines as a varietally labeled wine, especially in South Africa and Australia,
+                            though there
+                            are also notable ones produced on the North Fork of Long Island and California.</p>
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/h9CrBvpTF1S6xBRsMjqxorshaJc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Wine-Guide-101-Viognier-FT-BLOG0922-2000-b46787924486401eabb694f1e47e34c2.jpg"
+                            alt="White Wine 2">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Viognier</h2>
+                        <p>Viognier is a white wine produced from the grape variety of the same name. In the Northern
+                            Rhône, the
+                            grape won't typically appear on the label — instead, the name of one of two appellations
+                            will be
+                            emblazoned: Condrieu or Château-Grillet, the latter of which is composed from a single
+                            producer of
+                            the same name.</p>
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/OCDZEXF6ZWGWVhDU2eNNBVORLy8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Wine-Guide-Vernaccia-FT-BLOG0922-2000-f4e9e6a8e94e4b2a8ba12cef96d11c85.jpg"
+                            alt="White Wine 2">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Vernaccia</h2>
+                        <p>Vernaccia is the white wine produced from the grape variety of the same name. It is rarely
+                            seen
+                            outside of Tuscany, and it is responsible for the region's only DOCG white wine, Vernaccia
+                            di San
+                            Gimignano.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/CkGptHEPBf-C4U5isstVNP-ujaM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Whats-Your-Chardonnay-FT-MAG0422-c5e2145a81714aa29080ff3e4057a405.jpg"
+                            alt="White Wine 2">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Chardonnay</h2>
+                        <p>Chardonnay is a white grape variety that is widely planted around the world. It has an almost
+                            preternatural ability to both express the land in which it's grown and showcase the style of
+                            the
+                            winemaker. Because of that, Chardonnay can be a bit of a chameleon, covering the full
+                            spectrum from
+                            crisp and refreshing to velvety and generous. It's even one of the main grape varieties
+                            responsible
+                            for Champagne.</p>
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/aEGlBL9LG5FY9x2fcRuxRsg1k0w=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Gruner-Veltliner-Guide-FT-BLOG0722-2000-79cbaf8a08a641d48bef4458e4d8616f.jpg"
+                            alt="White Wine 2">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Grüner Veltliner</h2>
+                        <p>Grüner Veltliner wine is made from the grape variety of the same name. It is most famously
+                            produced
+                            in Austria, where many professionals assert it reaches its peak of quality and
+                            expressiveness, but
+                            it is also grown and produced in Hungary, the Czech Republic, and Slovakia.</p>
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/hOGN634Xt2jn6O3cfKhfySg8nGQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Wine-Guide-101-Sauvignon-Blanc-FT-BLOG0922-2000-b06eb781fedc46e2a33cfcbcc885bfc0.jpg"
+                            alt="White Wine 2">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Sauvignon Blanc<< /h2>
+                                <p>Sauvignon Blanc is a white wine produced from the grape variety of the same name. In
+                                    North and South
+                                    America, New Zealand, and Australia, it goes by the name of that grape, and bottles
+                                    tend to be
+                                    labeled as Sauvignon Blanc. In France, however, that is generally not the case. The
+                                    wines of
+                                    Pouilly-Fumé and Sancerre, for example, are produced from Sauvignon Blanc by law,
+                                    yet they are
+                                    labeled with the name of the appellation as opposed to the grape. Meanwhile, white
+                                    Bordeaux (or
+                                    Bordeaux Blanc) is typically a blend of Sauvignon Blanc and Semillon,</p>
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/_u8V62QNadwhWLIHJeLnLGo7O3E=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Best-Riesling-FT-BLOG0623-2d2a150ec43b4aa980f7ab7d431ca885.jpg"
+                            alt="White Wine 2">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Riesling</h2>
+                        <p>Riesling is a wine produced from the grape variety of the same name. The vast majority of
+                            Rieslings
+                            on the market are still white wines, but it's possible to find sparkling examples as well.
+                            Depending
+                            on where and how it's produced, Riesling can be dry, sweet, or somewhere in between.</p>
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/mkuFpQzPL2AjpHiJPgeW5XC5XY8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/best-pinot-grigios-FT-BLOG0122-22246b14b9b744a083a2410fece2dabf.jpg"
+                            alt="White Wine 2">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Pinot Grigio/Gris</h2>
+                        <p>Pinot Gris, or Pinot Grigio as it's known in Italy and throughout much of the world, is a
+                            wine
+                            produced from the grape of the same name. In general, Pinot Gris and Pinot Grigio showcase
+                            fruit on
+                            the citrus end of the spectrum, predominantly with lemon and lime. You might also find crisp
+                            apples
+                            like Granny Smith and hard pears. Hints of flowers like honeysuckle and citrus blossom are
+                            usually
+                            only present in the best examples.</p>
+                    </div>
+                </div>
+
+
+                <div class="wine-item">
+                    <div class="wine-image">
+                        <img src="https://www.foodandwine.com/thmb/0VwVkupA84tiRj_w96tn7ULteYA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Wine-Guide-101-Pinot-Blanc-FT-BLOG0822-2000-d1a787039fac4caa85fecd4c5c9b0ea0.jpg"
+                            alt="White Wine 2">
+                    </div>
+                    <div class="wine-description">
+                        <h2>Pinot Blanc</h2>
+                        <p>Pinot Blanc wine is produced from the grape variety of the same name. The grape is referred
+                            to as
+                            Pinot Bianco in Italy, where it thrives in the northeast of the country. In Austria, where
+                            the
+                            variety excels as well, it is referred to as Weissburgunder. </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        window.onscroll = function () {
+            var myDiv = document.querySelector('.header');
+            var navbar = document.querySelectorAll('.navbar a span');
+            var rootStyle = document.documentElement.style;
+            if (window.pageYOffset > 85) {
+                myDiv.style.background = '#151515';
+                navbar.forEach(item => {
+                    item.style.setProperty('color', '#F3F1EE', 'important');
+                });
+                rootStyle.setProperty('--navbar-before-bg', '#F3F1EE');
+            } else {
+                myDiv.style.background = '';
+                navbar.forEach(item => {
+                    item.style.setProperty('color', '#151515', 'important');
+                });
+                rootStyle.setProperty('--navbar-before-bg', '#151515');
+            }
+        };
+
+
+        const yesButton = document.getElementById("yesButton");
+        const noButton = document.getElementById("noButton");
+        const wineTypeQuestion = document.getElementById("wineTypeQuestion");
+        const redButton = document.getElementById("redButton");
+        const whiteButton = document.getElementById("whiteButton");
+        const redWines = document.getElementById("redWines");
+        const whiteWines = document.getElementById("whiteWines");
+
+
+        yesButton.addEventListener("click", function () {
+            wineTypeQuestion.style.display = "block";
+        });
+
+
+        noButton.addEventListener("click", function () {
+            // Handle the case where the user has no wine preference
+            alert("Enjoy exploring different types of wine!");
+        });
+
+
+        redButton.addEventListener("click", function () {
+            redWines.style.display = "block";
+            whiteWines.style.display = "none"; // Hide the white wines list
+        });
+
+
+        whiteButton.addEventListener("click", function () {
+            whiteWines.style.display = "block";
+            redWines.style.display = "none"; // Hide the red wines list
+        });
+
+    </script>
+</body>
+
+</html>

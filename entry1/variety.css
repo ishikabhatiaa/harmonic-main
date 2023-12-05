@@ -1,0 +1,113 @@
+.main {
+    margin: 0 auto;
+    /* Center horizontally */
+    padding: 0;
+    /* Remove padding */
+    text-align: center;
+    /* Center text content */
+}
+
+
+.guide {
+
+    padding: 30px;
+    justify-content: center;
+}
+
+.options {
+    margin: auto;
+    padding: 30px;
+    justify-content: center;
+}
+
+
+.options h1 {
+    font-size: 30px;
+    font-weight: 70;
+    text-align: center;
+    margin: auto;
+    transition: color 0.85s;
+    padding: 20px;
+    z-index: 1;
+
+}
+
+.options button {
+    margin: auto;
+    padding: 20px;
+    width: 45%;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #151515;
+    color: #151511;
+    font-size: 20px;
+    font-weight: 70;
+    text-align: center;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#wineTypeQuestion,
+#redWines,
+#whiteWines {
+    text-align: center;
+}
+
+.wine-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.wine-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.wine-image img {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+#redWines .wine-description {
+    flex: 2;
+    text-align: right;
+}
+
+
+#whiteWines {
+    text-align: center;
+}
+
+#whiteWines .wine-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#whiteWines .wine-image img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#whiteWines .wine-description {
+    text-align: left;
+}
+
+#whiteWines h2, #redWines h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#whiteWines p, #redWines p {
+    font-size: 18px;
+    line-height: 1.4;
+}

@@ -1,0 +1,106 @@
+.wine-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.wine-selection .option {
+    position: relative;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: black;
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+
+    50% {
+        transform: translateY(20%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.wine-fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: transparent;
+    overflow: hidden;
+    color: #111;
+}
+
+#redWineFill {
+    background-color: #a52a2a;
+    animation: waveAnimation 1.72s ease-out forwards;
+    z-index: -11;
+}
+
+#whiteWineFill {
+    background-color: #FFFAFA;
+    animation: waveAnimation 1.72s ease-out forwards;
+    z-index: -11;
+}
+
+
+#redWine:hover,
+#redWine:hover h2,
+#redWine:hover p {
+    background-color: #a52a2a;
+    color: #FFFAFA;
+   
+}
+
+
+#whiteWine:hover,
+#whiteWine:hover h2,
+#whiteWine:hover p {
+    color: black;
+    
+}
+
+.wine-selection .option h2 {
+    transition: color 0.3s ease;
+}
+
+.wine-selection .option p {
+    color: #666;
+}
+
+.wine-selection .option:hover h2 {
+    transform: scale(1.05);
+}
+
+.containment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    margin: 70px 100px 50px 100px;
+}
+
+.containment h1,
+h2 {
+    color: #a52a2a;
+    transition: color 0.3s ease;
+    padding: 15px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
