@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Diary</title>
+    <link rel="stylesheet" href="diary.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="Wine">Wine</a>
+        <nav class="navbar">
+            <a href="../entry2/how.html"><span>how is wine made</span></a>
+            <a href="../entry1/varietals.html"><span>know your wine better</span></a>
+            <a href="../entry3/guide.html"><span>tasting guide</span></a>
+            <a href="../entry5/history.html"><span>wine storefront</span></a>
+            <a href="../entry4/pairing.html"><span>pairings</span></a>
+            <a href="../entry6/sangria.html"><span>sangria</span></a>
+            <a href="../entry7/diary.html"><span>my wine diary</span></a>
+            <a href="../entry8/discover.html"><span>discover</span></a>
+            <a href="../entry9/health.html"><span>health</span></a>
+            <a href="../entry10/glossary.html"><span>gloassary</span></a>
+        </nav>
+    </header>
+
+    
+    <div class="Main">
+        <h1>camera-roll.jpeg</h1>
+        <div class="container">
+
+            <img class="mySlides" src="images/wine1.jpg">
+            <img class="mySlides" src="images/wine2.jpg">
+            <img class="mySlides" src="images/wine3.jpg">
+            <img class="mySlides" src="images/wine4.jpg">
+            <img class="mySlides" src="images/wine5.jpg">
+            <img class="mySlides" src="images/wine6.jpg">
+            <img class="mySlides" src="images/wine7.jpg">
+            <img class="mySlides" src="images/wine8.jpg">
+            <img class="mySlides" src="images/wineS.jpeg">
+            <img class="mySlides" src="images/wineX.jpeg">
+
+            <div class="carousel-indicators">
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+                <span class="indicator" onclick="currentSlide(4)"></span>
+                <span class="indicator" onclick="currentSlide(5)"></span>
+                <span class="indicator" onclick="currentSlide(6)"></span>
+                <span class="indicator" onclick="currentSlide(7)"></span>
+                <span class="indicator" onclick="currentSlide(8)"></span>
+                <span class="indicator" onclick="currentSlide(9)"></span>
+                <span class="indicator" onclick="currentSlide(10)"></span>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        window.onscroll = function () {
+            var myDiv = document.querySelector('.header');
+            var navbar = document.querySelectorAll('.navbar a span');
+            var rootStyle = document.documentElement.style;
+            if (window.pageYOffset > 70) {
+                myDiv.style.background = '#151515';
+                navbar.forEach(item => {
+                    item.style.setProperty('color', '#F3F1EE', 'important');
+                });
+                rootStyle.setProperty('--navbar-before-bg', '#F3F1EE');
+            } else {
+                myDiv.style.background = '';
+                navbar.forEach(item => {
+                    item.style.setProperty('color', '#151515', 'important');
+                });
+                rootStyle.setProperty('--navbar-before-bg', '#151515');
+            }
+        };
+
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var indicators = document.getElementsByClassName("indicator");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < indicators.length; i++) {
+                indicators[i].className = indicators[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            indicators[slideIndex - 1].className += " active";
+        }
+        // Update the carousel function to use showSlides()
+        function carousel() {
+            slideIndex++;
+            showSlides(slideIndex);
+            setTimeout(carousel, 2250); // Change image every 2.25 seconds
+        }
+        carousel();
+    </script>
+
+</body>
+
+</html>

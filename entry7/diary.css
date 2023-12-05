@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F3F1EE;
+    font-family: 'Lora', serif;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    transition: color 0.95s ease;
+}
+
+
+.Wine {
+    font-size: 42px;
+    color: #a52a2a;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: auto;
+    z-index: 1;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: auto;
+}
+
+.navbar a span {
+    color: #151515;
+    padding: 0px 20px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.9s ease;
+}
+
+.navbar a span::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--navbar-before-bg);
+    transition: .35s;
+}
+
+:root {
+    --navbar-before-bg: black;
+}
+
+.navbar a:hover span::before {
+    width: 85%;
+}
+
+.Main {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.Main h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 55%;
+    margin: auto;
+    margin-top: 30px;
+    transition: all 0.9s ease;
+    padding: 10px;
+
+}
+
+
+input[type=radio] {
+    display: none;
+}
+
+.mySlides {
+    margin: auto;
+    width: 25vw;
+    display: block;
+    margin-bottom: 10px;
+    transition: all 0.75s ease;
+}
+
+.mySlides:hover {
+    transform: scale(1.1);
+    /* Scales image up on hover */
+}
+
+.carousel-indicators {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.indicator {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.indicator:hover {
+    background-color: #717171;
+}
