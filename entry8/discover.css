@@ -1,0 +1,54 @@
+.grid-container {
+    display: block;
+    gap: 20px;
+    /* Maintains gap for older browsers */
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+
+}
+
+
+.item-image {
+    justify-content: center;
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+.gridcontainer {
+
+    column-count: 3;
+    /* Adjust the number of columns as needed */
+    column-gap: 30px;
+    margin: auto;
+    justify-content: center;
+    width: 55%;
+    padding: 20px;
+
+}
+
+.item {
+
+    break-inside: avoid;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+    margin: auto;
+    display: block;
+}
+
+
+.item p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    padding: 12px;
+    ;
+}

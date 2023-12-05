@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Healthy too!</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="health.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="../index.html" class="Wine">Wine</a>
+        <nav class="navbar">
+            <a href="../entry2/how.html"><span>how is wine made</span></a>
+            <a href="../entry1/varietals.html"><span>know your wine better</span></a>
+            <a href="../entry3/guide.html"><span>tasting guide</span></a>
+            <a href="../entry5/history.html"><span>wine storefront</span></a>
+            <a href="../entry4/pairing.html"><span>pairings</span></a>
+            <a href="../entry6/sangria.html"><span>sangria</span></a>
+            <a href="../entry7/diary.html"><span>my wine diary</span></a>
+            <a href="../entry8/discover.html"><span>discover</span></a>
+            <a href="../entry9/health.html"><span>health</span></a>
+            <a href="../entry10/glossary.html"><span>gloassary</span></a>
+        </nav>
+    </header>
+    <div class="benefits">
+        <div>
+            <h2>How Much Wine Should You Drink?</h2>
+            <p>Moderate wine consumption varies based on gender, age, health, and wine's alcohol content. According to
+                PubMed
+                Central and the US Department of Health and Human Services, optimal consumption is 1 glass per day for
+                women and
+                2 for men. Wine's ABV is typically 12% per 5 fl. oz, higher than beer's 5% in 12 fl. oz. Stick to
+                recommended
+                servings and savor each sip.</p>
+        </div>
+
+        <div>
+            <h2>What is In Red Wine that is Good for You?</h2>
+            <p>Red wine, rich in antioxidants from dark-skinned grapes, combats harmful free radicals. Dark grapes, high
+                in
+                resveratrol, offer health benefits. Red wine's low carb content, around 2 grams per glass, contrasts
+                with beer's
+                10-20+ grams in 12 oz.</p>
+        </div>
+
+        <div>
+            <h2>What Are The Physical Benefits of Drinking Red Wine?</h2>
+            <p>Red wine's moderate consumption is linked to lower heart disease risk, thanks to antioxidants. It
+                improves heart
+                health, increases "good" HDL cholesterol, and lowers "bad" LDL cholesterol. Resveratrol in wine also
+                helps
+                reduce blood pressure and manage blood sugar in diabetics.</p>
+        </div>
+
+        <div>
+            <h2>The Benefits of Red Wine on Mental Health</h2>
+            <p>Moderate red wine consumption may reduce depression and anxiety risk. Resveratrol impacts brain enzymes
+                controlling stress, offering an alternative to traditional mental health medications. However, excessive
+                consumption can negate these benefits.</p>
+        </div>
+
+        <div>
+            <h2>Wine’s Distinct Aesthetic</h2>
+            <p>Wine's appeal is not just health-related. It's seen as sophisticated, historically enjoyed by nobility.
+                Its
+                visual appeal and the picturesque vineyards where it's made add to its distinct aesthetic. The
+                traditional grape
+                stomping process, "pigéage," further enhances its charm.</p>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function () {
+            var myDiv = document.querySelector('.header');
+            var navbar = document.querySelectorAll('.navbar a span');
+            var rootStyle = document.documentElement.style;
+            if (window.pageYOffset > 90) {
+                myDiv.style.background = '#151515';
+                navbar.forEach(item => {
+                    item.style.setProperty('color', '#F3F1EE', 'important');
+                });
+                rootStyle.setProperty('--navbar-before-bg', '#F3F1EE');
+            } else {
+                myDiv.style.background = '';
+                navbar.forEach(item => {
+                    item.style.setProperty('color', '#151515', 'important');
+                });
+                rootStyle.setProperty('--navbar-before-bg', '#151515');
+            }
+        };
+    </script>
+
+</body>
+
+</html>
